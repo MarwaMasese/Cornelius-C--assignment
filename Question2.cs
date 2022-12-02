@@ -8,7 +8,7 @@ class Loop{
     public Input(){
         Console.WriteLine("Enter the length of the array");
         total = Convert.ToInt32(Console.Readline());
-        int [total] integers = new int();
+        int [] integers = new int[total];
         for(int i = 0 ; i<total ; i++){
             Console.WriteLine("Enter an integer  Member of array");
             member = Convert.ToInt32(Console.Readline());
@@ -20,7 +20,7 @@ class Loop{
                 if(integer[i] %2== 0){
                     Console.WriteLine(integers[i]+ "is an even number");
                     int EvenIntegerIndex = 0;
-                    int [total] EvenNumbers= new int();
+                    int [] EvenNumbers= new int[total];
                     EvenNumbers[EvenIntegerIndex]= integers[i];
                     EvenIntegerIndex +=1;
                     Console.WriteLine(integers[i]+ "is an even number");
@@ -32,7 +32,7 @@ class Loop{
                 else if(integer[i] %2== 1){
                     Console.WriteLine(integers[i]+ "is an even number");
                     int OddIntegerIndex = 0;
-                    int [total] EvenNumbers= new int();
+                    int [] EvenNumbers= new int[total];
                     OddNumbers[OddIntegerIndex]= integers[i];
                     OddIntegerIndex +=1;
                     Console.WriteLine(integers[i] + "is an odd number");
