@@ -19,7 +19,7 @@ class InterestRate{
     public Output(){
         do {
         EndBalance = EndBalance + Amount + Interest;
-        Years += 1;
+        Years + 1;
         Interest = (EndBalance + Amount) * rate;
     } while (EndBalance <= TargetAmount); 
         Console.WriteLine("It will take {} years for your money to reach your target.", Years);
