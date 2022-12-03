@@ -25,7 +25,7 @@ class ListSorting{
     for(int j =0 ; j<SetOfNumbers.Length; j++){
         for(int k =0; k< SetOfNumbers.Length; k++){
             if(SetOfNumbers[i]< SetOfNumbers[k]){
-                SortedSetOfNumbers[0]= SetOfNumbers[k];
+                SortedSetOfNumbers[counter]= SetOfNumbers[k];
                 counter +1 ;
             }
         }
